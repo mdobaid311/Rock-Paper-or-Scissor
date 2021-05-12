@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+body {
+  background-color: #afd275;
+  margin: 0;
+  font-family: "Goblin One", cursive;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40vh;
+}
+
+.container .buttons {
+  background-color: #afd275;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.btn {
+  cursor: pointer;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 0.9rem;
+  margin: 20px;
+  padding: 4px 6px;
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.6), -4px -3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  filter: brightness(90%);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: scale(0.9);
+}
+
+.player_choice,
+.display {
+  display: inline-block;
+  box-shadow: inset 8px 8px 5px rgba(0, 0, 0, 0.6),
+    inset -4px -3px 5px rgba(0, 0, 0, 0.2);
+  padding: 15px 30px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1000px){
+  .btn{
+    height: 30px;
+    width: 70px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    margin: 10px;
+  }
+  .display{
+    padding: 10px 20px;
+    font-size: 12px;
+    margin: 20px 25px;
+  }
+}
